@@ -1,0 +1,14 @@
+/* Escreva um método chamado comparaTextos que recebe como parâmetros uma variável do tipo String (chamada texto1)
+e um arranjo de caracteres (chamado texto2) e verifica se os conteúdos textuais dessas duas variáveis são iguais, 
+comparando seus conteúdos caractere a caractere. Caso o conteúdo seja igual, deve retornar true, caso contrário, deve retornar false. */
+
+static boolean comparaTextos(String texto1, char[] texto2) {
+    char[] s2 = texto1.toCharArray();
+		for(int i=0; i<s2.length; i++){
+			if (s2[i] != texto2[i]){
+				return(false);
+			}
+		}
+	return(true);
+}
+
